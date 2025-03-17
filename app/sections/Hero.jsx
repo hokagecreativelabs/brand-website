@@ -28,7 +28,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('/assets/images/bg-pattern.webp')" }}
     >
       <div className="w-full max-w-[1046px] h-auto flex flex-col items-center text-center gap-6 pt-[120px] sm:pt-[110px]">
-        <h1 className="font-vastago font-semibold text-[96px] leading-[120%]">
+        <h1 className="font-vastago font-semibold text-[56px] md:text-[96px] leading-[120%]">
           Hokage Creative Labs
         </h1>
         <p className="max-w-[598px] text-[20px] leading-[145%]">

@@ -13,8 +13,14 @@ const Navbar = () => {
         <nav className="w-full h-[104px] px-6 md:px-24 flex items-center justify-center bg-white fixed top-0 z-50">
             <div className="w-full max-w-[1248px] h-full flex items-center justify-between gap-10">
                 {/* Logo */}
-                <div className="w-[128px] h-[40px] flex items-center justify-center object-contain">
-                    <img src="/assets/images/LOGO.png" alt="Logo" />
+                <div className="w-[128px] h-[40px] flex items-center justify-center">
+                    <img
+                        src="/assets/images/LOGO.png"
+                        alt="Logo"
+                        width="128"
+                        height="40"
+                        className="object-contain"
+                    />
                 </div>
 
                 {/* Desktop Nav Links */}

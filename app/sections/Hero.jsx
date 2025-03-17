@@ -34,7 +34,7 @@ const Hero = () => {
           Hokage Creative Labs
         </h1>
         <p className="w-full max-w-[598px] font-vastago text-[16px] sm:text-[18px] md:text-[20px] leading-[145%] px-2">
-          Established in 2012, Hokage Creative Labs stands as a premier strategic branding and design agency, dedicated to elevating brands with groundbreaking ideas and propelling them into the next frontier of innovation.
+          Established in 2023, Hokage Creative Labs stands as a premier strategic branding and design agency, dedicated to elevating brands with groundbreaking ideas and propelling them into the next frontier of innovation.
         </p>
 
         <div>

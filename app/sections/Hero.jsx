@@ -39,7 +39,7 @@ const Hero = () => {
 
         <div>
           {/* CTA */}
-          <button className="mt-[40px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
+          <button className="mt-[10px] md:mt-[40px] mb-[-30px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
             Request a Quote
             <img src="/assets/images/right-arrow.png" alt="Play" className="w-4 h-4" />
           </button>

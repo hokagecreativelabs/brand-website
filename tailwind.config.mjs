@@ -8,8 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        purple: "#21083F",
+        lemon: "#7FF41A",
+      },
+      fontFamily: {
+        vastago: ["Vastago Grotesque", "sans-serif"],
+        nohemi: ["Nohemi", "sans-serif"],
       },
     },
   },

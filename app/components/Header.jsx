@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="border w-full h-[104px] px-6 md:px-24 flex items-center justify-center bg-white fixed top-0 z-50">
+        <nav className="w-full h-[104px] px-6 md:px-24 flex items-center justify-center bg-white fixed top-0 z-50">
             <div className="w-full max-w-[1248px] h-full flex items-center justify-between gap-10">
                 {/* Logo */}
                 <div className="w-[128px] h-[40px] flex items-center justify-center object-contain">
@@ -40,7 +40,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden w-full bg-white shadow-md absolute top-[45px] left-0 p-6 z-50">
+                <div className="md:hidden w-full bg-white shadow-md absolute top-[100px] left-0 p-6 z-50">
                     <div className="flex flex-col gap-6">
                         <a href="#" className="font-nohemi text-[#101928] text-base font-medium">About</a>
                         <a href="#" className="font-nohemi text-[#101928] text-base font-medium">Services</a>

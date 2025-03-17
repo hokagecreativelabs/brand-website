@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Hero from "./sections/Hero";
 
 export default function Home() {
   return (
-    <h1 className="text-xl">Hello, Yasmeen. Wicked Designer</h1>
+    <div>
+      <Hero />
+    </div>
   );
 }

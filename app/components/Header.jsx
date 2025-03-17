@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
@@ -12,17 +13,16 @@ const Navbar = () => {
     return (
         <nav className="w-full h-[104px] px-6 md:px-24 flex items-center justify-center bg-white fixed top-0 z-50">
             <div className="w-full max-w-[1248px] h-full flex items-center justify-between gap-10">
-                {/* Logo */}
-                <div className="w-[128px] h-[40px] flex items-center justify-center">
-                    <img
+                <div className="flex items-center justify-center">
+                    <Image
                         src="/assets/images/LOGO.png"
                         alt="Logo"
-                        width="128"
-                        height="40"
-                        className="object-contain"
+                        width={128}
+                        height={40}
+                        className="h-24 w-24 object-contain"
+                        priority
                     />
                 </div>
-
                 {/* Desktop Nav Links */}
                 <div className="hidden md:flex items-center justify-center gap-8 bg-[#F0F2F5] w-[318px] h-[55px] py-4 px-10 rounded-full">
                     <a href="#" className="font-nohemi text-[#101928] text-base font-medium">About</a>

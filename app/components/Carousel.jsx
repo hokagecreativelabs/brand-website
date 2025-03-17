@@ -17,10 +17,14 @@ const Carousel = ({ images }) => {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="w-[600px] h-[338px] rounded-[24px] border border-gray-300 bg-cover bg-center"
-              style={{ backgroundImage: `url(${src})` }}
-            ></div>
+            <div className="w-[600px] h-[338px] rounded-[24px] border border-gray-300 overflow-hidden">
+              <img
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

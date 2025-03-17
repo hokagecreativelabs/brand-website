@@ -5,11 +5,11 @@ import dynamic from "next/dynamic";
 const Carousel = dynamic(() => import("../components/Carousel"), { ssr: false });
 
 const images = [
-  "/assets/images/itl-cover.png",
-  "/assets/images/mfon-books.png",
-  "/assets/images/enauf-cover.png",
-  "/assets/images/puc-cover.png",
-  "/assets/images/oladayo-cover.png",
+  "/assets/images/itl-cover.webp",
+  "/assets/images/mfon-books.webp",
+  "/assets/images/enauf-cover.webp",
+  "/assets/images/puc-cover.webp",
+  "/assets/images/oladayo-cover.webp",
 ];
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section
       className="relative w-full h-auto min-h-[876px] flex flex-col items-center justify-center bg-cover bg-center px-4 sm:px-8"
-      style={{ backgroundImage: "url('/assets/images/bg-pattern.png')" }}
+      style={{ backgroundImage: "url('/assets/images/bg-pattern.webp')" }}
     >
       {/* Hero Content */}
       <div className="w-full max-w-[1046px] h-auto flex flex-col items-center text-center gap-6 pt-[120px] sm:pt-[110px]">
@@ -41,7 +41,7 @@ const Hero = () => {
           {/* CTA */}
           <button className="mt-[10px] md:mt-[40px] mb-[-30px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
             Request a Quote
-            <img src="/assets/images/right-arrow.png" alt="Play" className="w-4 h-4" />
+            <img src="/assets/images/right-arrow.webp" alt="Play" className="w-4 h-4" />
           </button>
         </div>
 

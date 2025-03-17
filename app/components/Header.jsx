@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="w-full max-w-[1248px] h-full flex items-center justify-between gap-10">
                 <div className="flex items-center justify-center">
                     <img
-                        src="/assets/images/LOGO.png"
+                        src="/assets/images/LOGO.webp"
                         alt="Logo"
                         className="h-[40px] object-contain"
                         style={{ width: "auto" }}

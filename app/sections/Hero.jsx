@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Carousel from "../components/Carousel";
+import dynamic from "next/dynamic";
+
+const Carousel = dynamic(() => import("../components/Carousel"), { ssr: false });
 
 const images = [
   "/assets/images/itl-cover.png",
@@ -37,14 +39,14 @@ const Hero = () => {
 
         <div>
           {/* CTA */}
-          <button className="mt-[40px] font-vastago flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
+          <button className="mt-[40px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
             Request a Quote
             <img src="/assets/images/right-arrow.png" alt="Play" className="w-4 h-4" />
           </button>
         </div>
 
-        {/* Mobile Image (shows only on mobile) */}
-        <div className="lg:hidden w-full h-[338px] mt-[60px] flex justify-center items-center object-cover">
+        {/* Mobile Image (full-width on mobile) */}
+        <div className="lg:hidden w-full h-[338px] mt-[60px] flex justify-center items-center">
           <div
             className="w-full h-full rounded-[24px] border border-gray-300 bg-cover bg-center"
             style={{ backgroundImage: `url(${images[currentIndex]})` }}
@@ -52,7 +54,7 @@ const Hero = () => {
         </div>
 
         {/* Desktop Carousel */}
-        <div className="">
+        <div className="hidden lg:block">
           <Carousel images={images} />
         </div>
       </div>

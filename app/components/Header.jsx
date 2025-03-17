@@ -14,13 +14,11 @@ const Navbar = () => {
         <nav className="w-full h-[104px] px-6 md:px-24 flex items-center justify-center bg-white fixed top-0 z-50">
             <div className="w-full max-w-[1248px] h-full flex items-center justify-between gap-10">
                 <div className="flex items-center justify-center">
-                    <Image
+                    <img
                         src="/assets/images/LOGO.png"
                         alt="Logo"
-                        width={128}
-                        height={40}
-                        className="h-24 w-24 object-contain"
-                        priority
+                        className="h-[40px] object-contain"
+                        style={{ width: "auto" }}
                     />
                 </div>
                 {/* Desktop Nav Links */}

@@ -30,7 +30,7 @@ const Navbar = () => {
 
                 {/* CTA Button */}
                 <button className="hidden md:flex font-medium tracking-relaxed font-nohemi items-center justify-center gap-2 bg-purple text-white w-[150px] h-[56px] px-4 py-4 rounded-full">
-                    <span>Book a Call</span>
+                    <span className='font-vastago'>Book a Call</span>
                     <img src="/assets/images/call-icon.webp" className='w-[24px] h-[24px]' alt="Call Icon" />
                 </button>
 

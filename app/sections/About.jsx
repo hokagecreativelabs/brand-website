@@ -40,13 +40,13 @@ const AboutSection = () => {
         {/* Animated Text Content */}
         <p className="text-[32px] font-nohemi font-[500] leading-[116%] tracking-[-0.04em] text-[#667185] transition-opacity duration-700 ease-out">
           At <span className="text-black">HCL</span>, we specialize in crafting{" "}
-          <span className="font-[600] text-black">next-gen web experiences</span>{" "}
+          <span className="font-[600] text-black font-nohemi">next-gen web experiences</span>{" "}
           that blend creativity with cutting-edge technology.
         </p>
 
         <p className="text-[32px] font-nohemi font-[500] leading-[116%] tracking-[-0.04em] text-[#667185] transition-opacity duration-700 ease-out">
           We deliver tailored solutions for{" "}
-          <span className="font-[600] text-black">
+          <span className="font-[600] text-black font-nohemi">
             upgrading your site or creating a new digital platform.
           </span>
         </p>

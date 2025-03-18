@@ -66,7 +66,7 @@ const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="max-w-[598px] text-[20px] leading-[145%] tracking-[-0.01em]">
+        <p className="max-w-[598px] text-[20px] leading-[145%] tracking-[-0.01em] font-nohemi">
           Established in 2023, Hokage Creative Labs stands as a premier strategic
           branding and design agency.
         </p>
@@ -76,7 +76,7 @@ const Hero = () => {
           type="button"
           aria-label="Request a Quote"
           className={`mt-[10px] md:mt-[40px] mb-[-30px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition duration-300 ease-out ${
-            showCTA ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+            showCTA ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 font-nohemi"
           }`}
         >
           Request a Quote

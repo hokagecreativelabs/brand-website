@@ -21,21 +21,21 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-4">
                         {/* Top Left (Nav Links) */}
                         <div className="w-full md:w-[462px] flex items-center justify-around">
-                            <a href="#" className="text-white text-base font-medium">Projects</a>
-                            <a href="#" className="text-white text-base font-medium">About</a>
-                            <a href="#" className="text-white text-base font-medium">Contact</a>
+                            <a href="#" className="font-nohemi text-white text-base font-medium">Projects</a>
+                            <a href="#" className="font-nohemi text-white text-base font-medium">About</a>
+                            <a href="#" className="font-nohemi text-white text-base font-medium">Contact</a>
                         </div>
 
                         {/* Top Right (Email) */}
                         <div className="w-full md:w-[488px] h-[148px] flex items-center justify-center border-t md:border-t-0 md:border-l border-gray-600">
-                            <span className="text-white text-lg font-medium">hello@hokage.com</span>
+                            <span className="text-white text-lg font-medium font-nohemi">hello@hokage.com</span>
                         </div>
                     </div>
 
                     {/* Bottom Section */}
                     <div className="flex flex-col md:flex-row items-center justify-between pt-3 border-t border-gray-600 space-y-6 md:space-y-0">
                         {/* Bottom Left (Link) */}
-                        <a href="#" className="text-white text-sm font-medium">Services</a>
+                        <a href="#" className="text-white text-sm font-medium font-nohemi">Services</a>
 
                         {/* Bottom Center (Social Icons) */}
                         <div className="flex gap-6 mt-2 md:mt-0">
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
 
                         {/* Bottom Right (Copyright) */}
-                        <span className="text-white text-sm font-medium">© 2025 Hokage</span>
+                        <span className="text-white text-sm font-medium font-nohemi">© 2025 Hokage</span>
                     </div>
                 </div>
             </div>

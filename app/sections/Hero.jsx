@@ -34,9 +34,9 @@ const Hero = () => {
         <p className="max-w-[598px] text-[20px] leading-[145%]">
           Established in 2023, Hokage Creative Labs stands as a premier strategic branding and design agency.
         </p>
-        <button className="mt-[10px] md:mt-[40px] mb-[-30px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
+        <button type="button" aria-label="Request a Quote Button" className="mt-[10px] md:mt-[40px] mb-[-30px] flex items-center justify-center gap-[10px] w-[191px] h-[56px] border border-[#21083F] rounded-[40px] px-[16px] py-[16px] hover:bg-white hover:text-black transition">
             Request a Quote
-            <img src="/assets/images/right-arrow.webp" alt="Play" className="w-[20px] h-[10px]" />
+            {/* <img src="/assets/images/right-arrow.webp" alt="Play" className="w-[20px] h-[10px]" /> */}
           </button>
         <div className="lg:hidden w-full h-[338px] mt-[60px] flex justify-center items-center">
           <img

@@ -8,9 +8,15 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <AboutSection />
-      <Services />
-      <WorksSection />
+      <div className="mb-32">
+        <AboutSection />
+      </div>
+      <div className="mt-48 md:mt-0">
+        <Services />
+      </div>
+      <div className="-mt-24">
+        <WorksSection />
+      </div>
     </div>
   );
 }

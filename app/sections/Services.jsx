@@ -44,7 +44,7 @@ const bottomServices = [
   const ServicesSection = () => {
     return (
       <section className="flex flex-col gap-12 pb-20 mx-auto max-w-[1248px] px-6">
-        <h2 className="font-vastago text-[48px] font-normal leading-[120%] tracking-[-1px]">
+        <h2 className="font-vastago text-[48px] font-normal leading-[120%] tracking-[-1px] mb-[-25px]">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

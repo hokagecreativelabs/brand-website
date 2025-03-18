@@ -57,7 +57,7 @@ const WorksSection = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="w-full max-w-[1248px] px-4 sm:px-8 lg:px-0">
-      <h2 className="font-vastago mb-6 text-[48px] font-normal leading-[120%] tracking-[-1px]">
+      <h2 className="font-vastago mb-6 text-[42px] font-normal leading-[120%] tracking-[-1px]">
           Selected Works
         </h2>
         <div className="grid grid-cols-1 gap-y-12 sm:gap-y-16 md:grid-cols-2 md:gap-x-8 lg:gap-x-12">

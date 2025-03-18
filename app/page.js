@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="mb-32">
+      <div className="mb-48">
         <AboutSection />
       </div>
-      <div className="mt-48 md:mt-0">
+      <div className="mt-32 md:-mt-48">
         <Services />
       </div>
       <div className="-mt-24">

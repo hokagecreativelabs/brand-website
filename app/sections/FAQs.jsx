@@ -13,43 +13,43 @@ const qnas = [
 ];
 
 export default function QnASection() {
-    const [activeIndex, setActiveIndex] = useState(null);
-  
-    const toggleQnA = (index) => {
-      setActiveIndex(activeIndex === index ? null : index);
-    };
-  
-    return (
-      <section className="w-full px-4 py-12 md:px-8 lg:px-16 flex justify-center items-center">
-        <div className="max-w-[1088px] flex flex-col items-center gap-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center">
-            <span className="text-black">Common</span>{" "}
-            <span className="text-gray-500">Questions</span>
-          </h2>
-  
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
-            {qnas.map((qna, index) => (
-              <div
-                key={index}
-                className={`w-full p-6 md:p-8 border rounded-3xl cursor-pointer transition-all duration-300 ${
-                  activeIndex === index ? "bg-gray-100" : ""
-                }`}
-                onClick={() => toggleQnA(index)}
-              >
-                <div className="flex justify-between items-center">
-                  <span className="text-lg font-vastago font-semibold">{qna.question}</span>
-                  {activeIndex === index ? <FiMinus /> : <FiPlus />}
-                </div>
-                {activeIndex === index && (
-                  <>
-                    <hr className="my-4 border-gray-300" />
-                    <p className="mt-2 text-gray-600 font-nohemi">{qna.answer}</p>
-                  </>
-                )}
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleQnA = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  return (
+    <section className="w-full px-4 py-12 md:px-8 lg:px-16 flex justify-center items-center">
+      <div className="max-w-[1088px] flex flex-col items-center gap-8">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center">
+          <span className="text-black">Common</span>{" "}
+          <span className="text-gray-500">Questions</span>
+        </h2>
+
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+          {qnas.map((qna, index) => (
+            <div
+              key={index}
+              className={`w-full p-6 md:p-8 border rounded-3xl cursor-pointer transition-all duration-300 ${
+                activeIndex === index ? "bg-gray-100" : "h-auto"
+              }`}              
+              onClick={() => toggleQnA(index)}
+            >
+              <div className="flex justify-between items-center">
+                <span className="text-lg font-semibold">{qna.question}</span>
+                {activeIndex === index ? <FiMinus /> : <FiPlus />}
               </div>
-            ))}
-          </div>
+              {activeIndex === index && (
+                <div className="overflow-hidden transition-max-height duration-300 ease-in-out">
+                    <hr className="my-4 border-gray-300" />
+                    <p className="mt-2 text-gray-600">{qna.answer}</p>
+                </div>
+                )}
+            </div>
+          ))}
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

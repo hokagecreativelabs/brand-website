@@ -6,27 +6,33 @@ import { useEffect, useState } from "react";
 const works = [
   {
     id: 1,
-    title: "The ITL Conference - The Westin, Calgary",
-    tags: ["12 weeks", "Website + Custom Dashboard", "Conference Website"],
-    image: "/assets/images/itl-cover.webp",
+    title: "Mfon Usoro Books",
+    tags: ["2 weeks", "Website + Sanity CMS", "Book Launch Website"],
+    image: "/assets/images/MP.webp",
   },
   {
     id: 2,
-    title: "Mfon Usoro Books",
-    tags: ["2 weeks", "Website + Sanity CMS", "Book Launch Website"],
-    image: "/assets/images/mfon-books.webp",
+    title: "The Oladayo Akinmokun",
+    tags: ["1 Week", "SPA", "Personal Portfolio"],
+    image: "/assets/images/daylee.webp",
   },
   {
     id: 3,
-    title: "The Oladayo Akinmokun",
-    tags: ["1 Week", "SPA", "Personal Portfolio"],
-    image: "/assets/images/oladayo-cover.webp",
+    title: "Enauf Homes",
+    tags: ["1 week", "Web Development", "Real Estate"],
+    image: "/assets/images/enauf.webp",
   },
   {
     id: 4,
-    title: "Enauf Homes",
-    tags: ["1 week", "Web Development", "Real Estate"],
-    image: "/assets/images/enauf-cover.webp",
+    title: "The ITL Conference - The Westin, Calgary",
+    tags: ["12 weeks", "Website + Custom Dashboard", "Conference Website"],
+    image: "/assets/images/itl.webp",
+  },
+  {
+    id: 5,
+    title: "KingsWord Church, Canada",
+    tags: ["12 weeks", "Website + Custom Dashboard", "Church Website"],
+    image: "/assets/images/itl.webp",
   },
 ];
 
@@ -64,7 +70,7 @@ const WorksSection = () => {
             return (
               <motion.div
                 key={work.id}
-                className="w-full max-w-[608px] mx-auto overflow-hidden rounded-[25px] shadow-lg transform transition-transform hover:scale-105"
+                className="w-full max-w-[608px] mx-auto overflow-hidden rounded-[25px] transform transition-transform hover:scale-105"
                 whileHover={{ scale: 1.03 }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +82,7 @@ const WorksSection = () => {
                     <img
                       src={work.image}
                       alt={`Project: ${work.title}`}
-                      className="w-full h-[400px] object-cover rounded-[25px]"
+                      className="w-full h-[400px] object-contain rounded-[25px]"
                       loading="lazy"
                     />
                   </div>

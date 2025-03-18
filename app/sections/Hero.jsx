@@ -6,11 +6,11 @@ import { FiArrowRight } from "react-icons/fi";
 const Carousel = dynamic(() => import("../components/Carousel"), { ssr: false });
 
 const images = [
-  "itl-cover",
-  "mfon-books",
-  "enauf-cover",
-  "puc-cover",
-  "oladayo-cover",
+  "b2b",
+  "b2b",
+  "b2b",
+  "b2b",
+  "b2b",
 ];
 
 const Hero = () => {

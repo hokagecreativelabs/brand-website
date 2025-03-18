@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import AboutSection from "./sections/About";
 import Services from "./sections/Services";
 import WorksSection from "./sections/Works";
+import FAQSection from "./sections/FAQs";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </div>
       <div className="-mt-24">
         <WorksSection />
+      </div>
+      <div className="-mt-24">
+        <FAQSection />
       </div>
     </div>
   );

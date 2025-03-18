@@ -70,7 +70,7 @@ const WorksSection = () => {
             return (
               <motion.div
                 key={work.id}
-                className="w-full max-w-[608px] mx-auto overflow-hidden rounded-[25px] transform transition-transform hover:scale-105"
+                className="w-full max-w-[608px] mx-auto overflow-hidden shadow-lg rounded-[25px] transform transition-transform hover:scale-105"
                 whileHover={{ scale: 1.03 }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ const WorksSection = () => {
                     <img
                       src={work.image}
                       alt={`Project: ${work.title}`}
-                      className="w-full h-[400px] object-contain rounded-[25px]"
+                      className="w-full h-[400px] object-cover rounded-[25px]"
                       loading="lazy"
                     />
                   </div>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-const faqs = [
+const qnas = [
   { question: "What types of development services do you offer?", answer: "We offer full-stack development, frontend engineering, backend systems, and more." },
   { question: "How do you ensure the quality of your projects?", answer: "We follow best practices, code reviews, and testing protocols." },
   { question: "What is your development process like?", answer: "We follow agile methodologies, keeping you updated at every step." },
@@ -12,50 +12,44 @@ const faqs = [
   { question: "How often will I receive updates on the project?", answer: "We provide regular updates through your preferred communication channel." },
 ];
 
-export default function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
-  return (
-    <section className="w-[1440px] h-[721px] px-16 pt-20 pb-16 flex justify-center items-center">
-      <div className="w-[1088px] h-[577px] max-w-[1088px] gap-20 flex flex-col items-center">
-        <h2 className="text-6xl font-semibold text-center">
-          <span className="text-black">Common</span> <span className="text-gray-500">Questions</span>
-        </h2>
-        <div className="w-[1088px] h-[335px] flex gap-4">
-          <div className="w-[536px] h-[335px] flex flex-col gap-4">
-            {faqs.slice(0, 3).map((faq, index) => (
+export default function QnASection() {
+    const [activeIndex, setActiveIndex] = useState(null);
+  
+    const toggleQnA = (index) => {
+      setActiveIndex(activeIndex === index ? null : index);
+    };
+  
+    return (
+      <section className="w-full px-4 py-12 md:px-8 lg:px-16 flex justify-center items-center">
+        <div className="max-w-[1088px] flex flex-col items-center gap-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center">
+            <span className="text-black">Common</span>{" "}
+            <span className="text-gray-500">Questions</span>
+          </h2>
+  
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+            {qnas.map((qna, index) => (
               <div
                 key={index}
-                className={`w-[536px] h-[101px] p-10 border rounded-3xl flex justify-between items-center cursor-pointer transition-all duration-300 ${
+                className={`w-full p-6 md:p-8 border rounded-3xl cursor-pointer transition-all duration-300 ${
                   activeIndex === index ? "bg-gray-100" : ""
                 }`}
-                onClick={() => toggleFAQ(index)}
+                onClick={() => toggleQnA(index)}
               >
-                <span className="text-lg font-medium">{faq.question}</span>
-                {activeIndex === index ? <FiMinus /> : <FiPlus />}
-              </div>
-            ))}
-          </div>
-          <div className="w-[536px] h-[335px] flex flex-col gap-4">
-            {faqs.slice(3).map((faq, index) => (
-              <div
-                key={index + 3}
-                className={`w-[536px] h-[101px] p-10 border rounded-3xl flex justify-between items-center cursor-pointer transition-all duration-300 ${
-                  activeIndex === index + 3 ? "bg-gray-100" : ""
-                }`}
-                onClick={() => toggleFAQ(index + 3)}
-              >
-                <span className="text-lg font-medium">{faq.question}</span>
-                {activeIndex === index + 3 ? <FiMinus /> : <FiPlus />}
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-vastago font-semibold">{qna.question}</span>
+                  {activeIndex === index ? <FiMinus /> : <FiPlus />}
+                </div>
+                {activeIndex === index && (
+                  <>
+                    <hr className="my-4 border-gray-300" />
+                    <p className="mt-2 text-gray-600 font-nohemi">{qna.answer}</p>
+                  </>
+                )}
               </div>
             ))}
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
+    );
+  }

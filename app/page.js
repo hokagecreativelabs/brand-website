@@ -18,7 +18,7 @@ export default function Home() {
       <div className="-mt-24">
         <WorksSection />
       </div>
-      <div className="-mt-24">
+      <div className="-mt-12">
         <FAQSection />
       </div>
     </div>

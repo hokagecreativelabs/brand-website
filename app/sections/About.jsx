@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="w-full max-w-[1440px] h-[429px] pt-5 pb-24 mx-auto">
-      <div className="px-4 text-center md:text-left flex flex-col w-full max-w-[800px] h-[309px] gap-10 mx-auto">
+    <section className="w-full max-w-[1440px] h-[429px] pt-5 pb-32 mx-auto">
+      <div className="px-4 md:text-left flex flex-col w-full max-w-[800px] h-[309px] gap-10 mx-auto">
         {/* Placeholder for the image */}
         <div className="">
           <img src="/assets/images/about-icon.webp" alt="Icon" className="" />
